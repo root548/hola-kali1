@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@keyframes rotariziquierdaderecha {
+    0%,
+    100%{
+        transform: rotate(-5deg);}
+    
+    50% {
+        transform: rotate(4deg);
+    }
+}
+.animate-card{
+    animation: rotariziquierdaderecha 1s ease-in-out infinite;
+    /*1. La regla @keyframes rotariziquierdaderecha
+Define la trayectoria y las fases del movimiento:
+
+0% y 100% (Inicio y final de la animación): El elemento empieza inclinado 5 grados a la izquierda (rotate(-5deg)). Al terminar el ciclo vuelve a esta misma posición para que la transición sea fluida sin saltos bruscos.
+
+50% (Mitad del tiempo): El elemento rota 4 grados hacia la derecha (rotate(4deg)).
+
+2. La clase .animate-card
+Aplica la regla anterior a cualquier elemento HTML mediante la propiedad abreviada animation:
+
+rotariziquierdaderecha: El nombre de la animación que va a ejecutar.
+
+1s: La duración total de un ciclo completo (de 0% a 100%) es de 1 segundo.
+
+ease-in-out: El ritmo de aceleración; empieza suave, acelera en el medio y frena suavemente al cambiar de dirección.
+
+infinite: Repite la animación de forma infinita.
+
+basicamente es codigo puro para no depender solamnete de tailwins que podemos modificar tambien en html se puso animate-card*/
+}
+
+.conten-main{
+    @apply grid sm:grid-cols-2 md:grid-cols-3 p-5 h-screen bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600
+/* aquo se copio el codigo de index para que solo se vea mas limpio el index xolocando la etiqueta conten-main en index */
+/* de aqui pa delante nuevo codigo lo anterior es ej del codigo 2 */
+
+
+
+
+
